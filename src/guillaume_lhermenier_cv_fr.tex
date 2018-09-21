@@ -1,0 +1,155 @@
+\newcommand\Colorhref[3][color1]{\href{#2}{\color{#1}\underline{#3}}}
+\documentclass[10pt,a4paper]{moderncv}
+
+\usepackage{moderntimeline}
+\usepackage[french]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%\renewcommand{\FrenchLabelItem}{\textcolor{blue}{$\circ$}}
+
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\tlmaxdates{2004}{2017}
+\tlwidth{0.8ex}
+\tltext{\tiny}
+\tltextstart[base]{\scriptsize}
+% adjust the page margins
+\usepackage[scale=0.90]{geometry}
+\setlength{\hintscolumnwidth}{2.5cm}           % if you want to change the width of the column with the dates
+
+% personal data
+\firstname{Guillaume}
+\familyname{Lhermenier}
+\title{Expert en rien et curieux de tout qui aime apprendre et échanger.\newline
+Et si ca peut être dans un environnement cool...}
+\address{21 avenue du Bel Air}{77340 Pontault-Combault}
+\mobile{06-21-67-54-21}
+% \phone{xx-xx-xx-xx-xx}
+\email{guillaume.lhermenier@gmail.com}
+\homepage{https://github.com/gocho1}
+\extrainfo{33 ans - Permis B}
+%\photo[60pt][0.2pt]{photo_cv}
+\quote{""}
+\quote{"It’s fine to celebrate success but it is more important to heed the lessons of failure." -- Bill Gates}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Expériences professionnelles}
+
+\tlcventry{2017}{0}{Developpeur curieux intéressé par l'automatisation}{BNP Paribas}{Montreuil}{}
+{
+\begin{itemize}
+ \item Réalisation de mécanismes d'ingestion data génériques pour les différentes entités du groupe
+  \begin{itemize}
+   \item Diversité technique importante sur les différents mécanismes : \textbf{Kafka}, Java, Scala, Angular, Springboot, IBM WAS Liberty Core, Stack Elastic/Logstash/Kibana
+   \item Mise en place de l'intégration et déploiement continu des projets : Jenkins, \textbf{Ansible}, CA ARA, \textbf{Docker}
+   \item \textbf{Automatisation} de tests (unitaires, intégration, non régression, performances) dans une approche multi-composants
+  \end{itemize}
+ \item Contexte international et agile : Echanges écrits et oraux en anglais dans une équipe multinationale (Belgique flamande, Italie, France) 
+\end{itemize}
+}
+
+\tlcventry{2016}{2017}{DevOps débutant}{BNP Paribas}{Montreuil}{1 an 1 mois}
+{
+\begin{itemize}
+ \item Appui technique et "process internes" auprès des équipes de developpeurs de divers projets
+  \begin{itemize}
+   \item Mise en place d'outils pour faciliter le quotidien des équipes (gestionnaire de mots de passe centralisé, Suivi de production automatisé) 
+   \item \textbf{"\'{E}vangelisation"} sur l'automatisation, édition de bonnes pratiques 
+   \item \textbf{DevOps} : Rapprochement des développeurs et des équipes de production, assistance aux développeurs afin de rendre les applications déployables automatiquement, proprement et de manière intégrée au SI
+   \item Nouvelles approches technologiques : \textbf{Docker}, Kubernetes
+  \end{itemize}
+\end{itemize}
+}
+
+
+\tlcventry{2016}{2016}{Chef de projet BI}{BNP Paribas}{Montreuil}{10 mois}
+{
+\begin{itemize}
+ \item Mise en place d'une application web de reporting sur les virement internationaux des clients Entreprises et Institutions (CIB) \newline
+	\textit{Specifications fonctionnelles et techniques, Design BDD, Pilotage, Réalisation dictionnaire de données Liberty Pilot}
+ \item Découverte de nouvelles technologies : JQuery, D3.js, Liberty Pilot \& Insight 
+\end{itemize}
+}
+
+
+
+\tlcventry{2015}{2016}{Responsable d'applications BI}{BNP Paribas}{Montreuil}{1 an}
+{
+\begin{itemize}
+ \item Maintenance opérationnelle et technique de plusieurs applications de reportings \newline
+ 	\textit{Suivi des évolutions et de la production, Pilotage planning et budgétaire, Pilotage de la TMA}
+ \item Rationalisation du processus de releases des applications du domaine Reporting : Intégration Continue (SVN, Jenkins, Sonar, Nexus) et Déploiement Continu (Pilote sur CA ARA)  
+\end{itemize}
+}
+
+
+\tlcventry{2013}{2014}{Chef de projet BI}{BNP Paribas}{Montreuil}{1 an 2 mois}
+{
+\begin{itemize}
+ \item Mise en place d'une application de reporting destinées aux conseillers d'Affaires Entreprises et Retail de la Banque De Détails France (BDDF) pour le suivi des PME. \newline
+   \textit{Note de cadrage de la solution technique, Réalisation des spécifications fonctionnelles et techniques (datamart, reportings), Pilotage de la réalisation, Suivi planning et budgétaires}
+ \item Technologies : Cognos BI 10.2, Teradata (12,14), IBM WAS 8.5, Jave J2EE
+\end{itemize}
+}
+
+\tlcventry{2010}{2013}{Responsable d'applications BI}{BNP Paribas}{Montreuil}{3 ans}
+{
+\begin{itemize}
+ \item Responsable d'applications BI destinées aux conseillers d'Affaires des réseaux Entreprises et Retail de la Banque de Détail France (BDDF) \newline
+	\textit{Cadrage des évolutions et suivi, Suivi des réalisations de la TMA, Pilotage budgétaire des applications}
+ \item Technologies : Business Objects (Xir2, XI3), Teradata (v2r6, 12), IBM WAS ND (6,7)
+\end{itemize}
+}
+
+\tlcventry{2009}{2010}{Responsable Pôle de compétences Access}{Allianz Group}{La Défense}{1 an}
+{
+\begin{itemize}
+  \item Prise en charge des analyses et développement d’applications multiutilisateurs : Portefeuille de contrats obsèques (Caton), Suivi des contrôles quotidiens d'un gestionnaire VIE, Suivi du plan de contrôles locaux DDOV
+  \item Maintenance applicative des outils existants, formation et accompagnement des utilisateurs : cartographie des processus de gestion manuelle DR Paris, Mise en place d'un process de déploiement/mise à jour des applications
+\end{itemize}
+}
+
+\tlcventry{2007}{2009}{Assistant chef de projet Maitrise d'Ouvrage (Alternance)}{AGF}{La Défense}{2 ans}
+{
+\begin{itemize}
+ \item Etude d'un projet d'industrialisation de jeux d'essais pour le domaine de la recette fonctionnelle
+ \item Refonte du référentiel des recettes applicatives : Etablissement de modèles de fichiers de suivi, Supervision des réalisations et suivi d’avancement, conseil méthodologique
+ \item Adhésion à un pôle de compétence Access (études et développement d'applications pour la direction VIE) : Outil de suivi de formation de nouveaux collaborateurs (OTP), Outil de suivi de l'opération de sécurisation du portefeuille (DDAC)
+\end{itemize}
+}
+
+\tlcventry{2006}{2007}{Analyste Developpeur (Alternance L3 MIAGE)}{Carrefour pour le compte d'Unilog}{Evry}{1 an}
+{Activités de recettes applicatives (rédaction dossiers, plans de test, reporting)
+Participation à la Tierce Recette Applicative d'un site de e-commerce pour un grand compte de la distribution}
+
+\bigskip
+
+\section{Formation}
+
+\tlcventry{2006}{2009}{Cursus MIAGE (Licence, Master)}{Université Evry Val d'Essonne}{}{3 ans}{}
+\tlcventry{2004}{2006}{DUT Informatique de Gestion}{IUT Fontainebleau}{}{2 ans}{}
+
+\section{Compétences}
+
+\cvitem{Développement}{Java, Shell Scripting, notions de Scala, Python}{}{}
+\cvitem{Automatisation}{\textbf{Ansible}}{}{}	
+\cvitem{Conteneurisation}{\textbf{Docker}, notions de LXC}{}{}
+\cvitem{Système}{\textbf{GNU/Linux} (RHEL, CentOS)}{}{}
+\cvitem{Divers}{intégration continue}{}{}
+
+\section{Langues}
+
+\cvlanguage{Anglais}{Courant}{Pratiqué quotidiennement}
+\cvlanguage{Allemand}{Notions}{\'{E}tudié 7 ans, très peu pratiqué}
+
+\section{Centres d'interêt}
+
+\cvitem{Sport}{badminton, football}
+\cvitem{Autres}{Lecture, nouvelles technologies}
+
+\end{document}
+
